@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="menu">
+      <div class="container">
+        <div class="menu__wrapper">
+
+          
+
+          <nav class="header__menu">
+
+            <div class="header__menu-btn">
+              <div class="header__menu-row"></div>
+              <div class="header__menu-row"></div>
+              <div class="header__menu-row"></div>
+            </div> 
+
+            <ul class="menu__list">
+
+             
+
+              <li><a href="portfolio" class="menu__link">PORTFOLIO</a></li>
+              <li><a href="about" class="menu__link">ABOUT</a></li>
+              <li class="menu__imgas">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="64px"
+                  height="55px"
+                >
+                  <image
+                    x="0px"
+                    y="0px"
+                    width="64px"
+                    height="55px"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+              </li>
+              <li><a href="#" class="menu__link">BLOG</a></li>
+              <li><a href="form" class="menu__link">GET IN TOUCH</a></li>
+            </ul>
+
+          </nav>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="hexagons hexagons_desk" id="portfolio">
+      <div class="container">
+        <div class="hexagons__wrapper">
+          <div class="hexagons__row">
+            <div class="hexagon">
+              <a href="#" target="_blank">
+                <img src="images/hexagons/hexagon_1.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img
+                  class="hexagon-img"
+                  src="images/hexagons/hexagon_2.png"
+                  alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img
+                  class="hexagon-img"
+                  src="images/hexagons/hexagon_3.png"
+                  alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_4.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="hexagons__row">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_5.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_6.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_7.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_8.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_9.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="hexagons__row">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_10.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_11.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_12.png" alt=""
+              /></a>
+            </div>
+
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_13.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hexagons slider hexagons_mob">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank">
+                <img src="images/hexagons/hexagon_1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img
+                  class="hexagon-img"
+                  src="images/hexagons/hexagon_2.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img
+                  class="hexagon-img"
+                  src="images/hexagons/hexagon_3.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_4.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_5.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_6.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_7.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_8.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_9.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_10.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_11.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_12.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/hexagon_13.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner row">
+          <div class="about__image">
+            <div class="hexagon">
+              <a href="#" target="_blank"
+                ><img src="images/hexagons/about_image.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <div class="about__title title">Smith Anderson</div>
+            <div class="about__subtitle subtitle">
+              Illustrator & Character Designer
+            </div>
+            <div class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              porttitor, nibh at sagittis tristique, enim magna pretium augue,
+              eget consectetur sem dui non urna. Integer gravida, diam congue
+              molestie fringilla, elit odio rhoncus turpis, ac dictum libero
+              elit vel metus. Morbi egestas sit amet velit eget venenatis.
+              Mauris porttitor, nibh at sagittis tristique, enim magna pretium
+              augue, eget consectetur sem dui non urna
+            </div>
+
+            <div class="about__social">
+              <a href=""
+                ><img
+                  src="Images/social-icon/Facebook.png"
+                  alt=""
+                  class="about__contact-icon facebook"
+              /></a>
+
+              <a href=""
+                ><img
+                  src="Images/social-icon/Twitter.png"
+                  alt=""
+                  class="about__contact-icon twitter"
+              /></a>
+
+              <a href=""
+                ><img
+                  src="Images/social-icon/Google.png"
+                  alt=""
+                  class="about__contact-icon google"
+              /></a>
+
+              <a href=""
+                ><img
+                  src="Images/social-icon/Pinterest.png"
+                  alt=""
+                  class="about__contact-icon pinterest"
+              /></a>
+
+              <a href=""
+                ><img
+                  src="Images/social-icon/Linkedin.png"
+                  alt=""
+                  class="about__contact-icon linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="form">
+      <div class="container">
+        <div class="form__wrapper">
+          <div class="form__title title">Get In Touch</div>
+          <div class="form__subtitle subtitle">
+            In order to get in touch use the contact form below:
+          </div>
+
+          <div class="form__test">
+            <form class="form__label" name="feedback">
+              <input
+                class="form__name"
+                type="text"
+                name="name"
+                required="required"
+                placeholder="Name (Required)"
+              />
+
+              <input
+                type="email"
+                name="email"
+                required="required"
+                placeholder="Email (Required)"
+              />
+              <textarea
+                class="textarea"
+                name="message"
+                placeholder="Write your message here..."
+              ></textarea>
+              <!-- <input type="submit" name="submit_btn" value="Отправить" /> -->
+              <button class="form__button" name="submit_btn">SEND</button>
+            </form>
+
+            <div class="form__info">
+              <div class="form__text">
+                Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra
+                nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+                libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.
+              </div>
+              <div class="form__contacts">
+                <div class="form__contact form__contacts-address">
+                  Elm St. 14/05 Lost City
+                </div>
+                <div class="form__contact form__contacts-telephon">
+                  + 3528 331 86 35
+                </div>
+
+                <div class="form__contact form__contacts-mail">
+                  info@info.ru
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
